@@ -1,0 +1,1008 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Алмаз</title>
+    <link rel="stylesheet" href="styles/jquery-ui.min.css">
+    <link rel="stylesheet" href="styles/animate.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="images/Logotip.png" alt="Логотип">
+        </div>
+        <nav class="menu">
+            <ul class="menu-list menu-first" id="menu-first">
+                <div class="menu-first-close" id="menu-close">
+                    <img src="images/close.svg" alt="close">
+                </div>
+                <li class="menu-list-item">
+                    <a href="#third-section-container" class="menu-link">Каталог</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#fifth-section-container" class="menu-link">О нас</a>
+                </li>
+            </ul>
+            <ul class="menu-list">
+                <li class="menu-list-item">
+                    <a href="#" class="menu-link" id="calculation">
+                        <img src="images/calculator.png" alt="Расчёт" class="menu-item-icon">
+                        <span class="menu-item-icon-span">Расчет по эскизам</span>
+                        <img src="images/calculator.svg" alt="Расчёт по эскизам" class="menu-list-item-icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="phone">
+            <div class="phone-icon">
+                <img src="images/phone-call.png" alt="Заказать звонок">
+            </div>
+            <div class="phone-text">
+                <div class="phone-number">8(800) 000 00 00</div>
+                <a href="#" class="phone-request">Заказать звонок</a>
+            </div>
+            <div class="phone-call">
+                <img src="images/phone-call.svg" alt="Звонок">
+            </div>
+        </div>
+        <div class="burger" id="burger">
+            <img src="images/menu.svg" alt="Burger Menu">
+        </div>
+    </div>
+</header>
+<section class="first-section wow animate__backInDown">
+    <div class="calculation-form" id="first-sec-calc">
+        <div class="container">
+            <div class="calculation-form-logo">
+                <img src="images/notepad.svg" alt="Расчёт по эскизам">
+            </div>
+            <div class="calculation-form-close">
+                <img src="images/close.svg" alt="Закрыть" class="calc-form-close">
+            </div>
+            <div class="calculation-form-thank-you" id="first-thank-you">
+                Спасибо, мы свяжемся с вами в ближайшее время!
+            </div>
+            <div class="calculation-form-text" id="calc-text-first-form">
+                <div class="calculation-form-title">
+                    Заполните форму
+                </div>
+                <div class="calculation-form-wishes">
+                    Пришлите нам Ваши пожелания по украшению: картинку или ссылку на сайт и его параметры.
+                    Вы можете оставить только свой контактный номер и мы с Вами свяжемся для уточнения всех деталей.
+                </div>
+            </div>
+            <div class="calculation-form-both-side" id="calc-form-first">
+                <form action="" class="calc-form">
+                    <input type="text" placeholder="Имя" class="calc-form-input form-input-text" id="name-first-calcform">
+                    <div class="error-input error-input-first">Необходимо указать ваше имя</div>
+                    <input type="text" placeholder="Телефон" class="calc-form-input form-input-text" id="phone-first-calcform">
+                    <div class="error-input error-input-second">Необходимо указать ваш телефон</div>
+                    <input type="text" placeholder="E-mail" class="calc-form-input form-input-text" id="email-first-calcform">
+                    <div class="error-input error-input-third">Необходимо указать ваш E-mail</div>
+                    <label class="calc-form-fourth-label">
+                        <input type="text" placeholder="Приложить файл" class="calc-form-input form-input-file">
+                        <button type="button" class="form-button form-calc-form-button">Загрузить</button>
+                    </label>
+                    <div>
+                        <div class="label-checkbox">
+                            <span class="label-checkbox-first">
+                                <input type="radio" id="first-calc-form-checkbox" value="Первое" name="stones"
+                                       class="calc-form-checkbox">
+                                <label for="first-calc-form-checkbox"><span></span>
+                                    С камнями
+                                </label>
+                            </span>
+                            <span class="label-checkbox-second">
+                                <input type="radio" id="first-calc-form-checkbox-second" value="Второе" name="stones"
+                                       class="calc-form-checkbox">
+                                <label for="first-calc-form-checkbox-second"><span></span>
+                                    Без камней
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                    <select class="calc-form-input calc-form-select">
+                        <option value="placeholder" disabled selected hidden>Размер изделия</option>
+                        <option value="small">Маленький</option>
+                        <option value="medium">Средний</option>
+                        <option value="large">Большой</option>
+                    </select>
+                </form>
+                <div class="calculation-form-right-side">
+                    <textarea class="calc-form-textarea" id="textarea-first-calcform" placeholder="Опишите ваши пожелания"></textarea>
+                    <div class="error-input error-input-fourth">Необходимо указать ваши пожелания по товару</div>
+                    <button type="submit" class="form-button button-submit" id="first-calcform-button-submit">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="first-section-info">
+            <h1 class="first-section-title">
+                Эксклюзивные украшения только для Вас!
+            </h1>
+            <div class="first-section-text">
+                Вы всегда мечтали об изделии, но вам везде говорят, что это слишком сложно?
+                Для нас это не проблема! Наши опытные мастера воплощают в жизнь самые невероятные эскизы.
+            </div>
+            <div class="first-section-action">
+                <a href="#third-section-container" class="button first-section-button">В каталог</a>
+            </div>
+            <div class="first-section-image">
+                <img src="images/main-image.png" alt="Украшения">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="second-section wow animate__backInDown">
+    <div class="container">
+        <div class="second-section-image">
+            <img src="images/director.png" alt="Директор">
+        </div>
+        <div class="second-section-info">
+            <h2 class="second-section-title">
+                Ювелирный дом Алмаз-это
+                техника, умение и талант!
+            </h2>
+            <div class="second-section-text">
+                <div class="second-section-text-first">
+                    <span class="second-section-text-first-span">К</span>рупное ювелирное производство с сетью салонов и
+                    офисов в Москве и Санкт-Петербурге,
+                    большой производственной базой и обширным штатом блестящих мастеров-ювелиров, дизайнеров, ювелирных
+                    стилистов и других специалистов.
+                </div>
+                <div class="second-section-text-second">
+                    <span class="second-section-text-second-first-span">Мы занимаемся производством необычных, эксклюзивных ювелирных украшений от эскиза до конечной
+                    продажи, а также предоставляем весь спектр ювелирных услуг.</span><span
+                        class="second-section-text-second-second-span">Когда-то мы начинали как небольшая, но
+                    амбициозная команда профессионалов, влюбленных в свое дело. <br>ЮД Алмаз сегодня – это большой,
+                    четко отлаженный процесс по созданию ювелирных украшений вашей мечты.</span>
+                </div>
+                <div class="second-section-text-third">
+                    <img src="images/director-sign.png" alt="Подпись директора" class="second-section-text-third-sign">
+                    <div class="second-section-text-third-text">Иванов Д.В. Генеральный директор</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="third-section wow animate__backInDown">
+    <div class="check-price" id="check-price">
+        <div class="container">
+            <div class="calculation-form-close">
+                <img src="images/close.svg" alt="Закрыть" class="check-price-close">
+            </div>
+            <div class="calculation-form-thank-you" id="third-thank-you">
+                Спасибо, мы свяжемся с вами в ближайшее время!
+            </div>
+            <h2 class="check-price-title">
+                Уточняйте цену на это изделие!
+            </h2>
+            <div class="check-price-text">
+                Заполните контактные данные и укажите Ваши пожелания, если это требуется.
+                <div>
+                    Мы рассчитаем стоимость изделия с учетом Ваших пожеланий и свяжемся с Вами!
+                </div>
+            </div>
+            <form action="" class="check-price-form" id="check-price-form">
+                <input type="text" placeholder="Имя" class="calc-form-input check-price-input" id="name-check-form">
+                <div class="error-input error-input-first">Необходимо указать ваше имя</div>
+                <input type="text" placeholder="Телефон" class="calc-form-input check-price-input" id="phone-check-form">
+                <div class="error-input error-input-second">Необходимо указать ваш номер</div>
+                <input type="text" placeholder="E-mail" class="calc-form-input check-price-input" id="email-check-form">
+                <div class="error-input error-input-third">Необходимо указать ваш email</div>
+                <textarea class="calc-form-textarea check-price-textarea" placeholder="Ваши пожелания"
+                          id="textarea-check-form"></textarea>
+                <div class="error-input error-input-fourth">Необходимо указать ваши пожелания</div>
+                <button type="submit" class="form-button check-price-button" id="check-form-button-submit">Уточнить
+                    стоимость
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="calculation-form" id="third-sec-calc">
+        <div class="container">
+            <div class="calculation-form-logo">
+                <img src="images/notepad.svg" alt="Расчёт по эскизам">
+            </div>
+            <div class="calculation-form-close">
+                <img src="images/close.svg" alt="Закрыть" class="calc-form-close">
+            </div>
+            <div class="calculation-form-thank-you" id="second-thank-you">
+                Спасибо, мы свяжемся с вами в ближайшее время!
+            </div>
+            <div class="calculation-form-text" id="calc-text-second-form">
+                <div class="calculation-form-title">
+                    Заполните форму
+                </div>
+                <div class="calculation-form-wishes">
+                    Пришлите нам Ваши пожелания по украшению: картинку или ссылку на сайт и его параметры.
+                    Вы можете оставить только свой контактный номер и мы с Вами свяжемся для уточнения всех деталей.
+                </div>
+            </div>
+            <div class="calculation-form-both-side" id="calc-form-second">
+                <form action="" class="calc-form">
+                    <label class="calc-form-first-label">
+                        <input type="text" placeholder="Имя" class="calc-form-input form-input-text" id="name-second-calcform">
+                        <div class="error-input error-input-first">Необходимо указать ваше имя</div>
+                    </label>
+                    <label class="calc-form-second-label">
+                        <input type="text" placeholder="Телефон" class="calc-form-input form-input-text" id="phone-second-calcform">
+                        <div class="error-input error-input-second">Необходимо указать ваш телефон</div>
+                    </label>
+                    <label class="calc-form-third-label">
+                        <input type="text" placeholder="E-mail" class="calc-form-input form-input-text" id="email-second-calcform">
+                        <div class="error-input error-input-third">Необходимо указать ваш E-mail</div>
+                    </label>
+                    <label class="calc-form-fourth-label">
+                        <input type="text" placeholder="Приложить файл" class="calc-form-input form-input-file">
+                        <button type="button" class="form-button form-calc-form-button">Загрузить</button>
+                    </label>
+                    <div>
+                        <div class="label-checkbox">
+                            <span class="label-checkbox-first">
+                                <input type="radio" id="second-calc-form-checkbox-first" value="Первое" name="stones-two"
+                                       class="calc-form-checkbox">
+                                <label for="second-calc-form-checkbox-first"><span></span>
+                                    С камнями
+                                </label>
+                            </span>
+                            <span class="label-checkbox-second">
+                                <input type="radio" id="second-calc-form-checkbox-second" value="Второе" name="stones-two"
+                                       class="calc-form-checkbox">
+                                <label for="second-calc-form-checkbox-second"><span></span>
+                                    Без камней
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                    <select class="calc-form-input calc-form-select">
+                        <option value="placeholder" disabled selected hidden>Размер изделия</option>
+                        <option value="small">Маленький</option>
+                        <option value="medium">Средний</option>
+                        <option value="large">Большой</option>
+                    </select>
+                </form>
+                <div class="calculation-form-right-side">
+                    <textarea class="calc-form-textarea" placeholder="Опишите ваши пожелания"
+                              id="textarea-second-caclform"></textarea>
+                    <div class="error-input error-input-fourth">Необходимо указать ваши пожелания по товару</div>
+                    <button type="submit" class="form-button button-submit" id="second-calcform-button-submit">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="third-section-container">
+        <h2 class="third-section-title">
+            Выберите своё уникальное изделие
+        </h2>
+        <div class="items-container">
+            <div class="third-section-info">
+                <div class="third-section-nav">
+                    <div class="third-section-catalog">
+                        <h3 class="third-section-catalog-title">Каталог</h3>
+                        <div class="select">
+                            <div class="select-button" data-type="Броши">Броши</div>
+                            <div class="third-section-catalog-navbar" id="catalog-navbar">
+                                <a class="third-section-catalog-navbar-item active" data-type="Броши">Броши</a>
+                                <a class="third-section-catalog-navbar-item" data-type="Серьги">Серьги</a>
+                                <a class="third-section-catalog-navbar-item" data-type="Кольца">Кольца</a>
+                                <a class="third-section-catalog-navbar-item" data-type="Кулоны">Кулоны</a>
+                                <a class="third-section-catalog-navbar-item" data-type="Браслеты и цепочки">Браслеты и
+                                    цепочки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-find" id="calculate">
+                    <h3 class="third-section-find-title">Не нашли то, что искали?</h3>
+                    <div class="third-section-find-text">
+                        Приложите фотографию, укажите Ваши пожелания и мы рассчитаем стоимость изделия.
+                    </div>
+                    <div class="third-section-find-action">
+                        <button class="button third-section-button" id="calc-button">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="third-section-items active" id="brooches">
+                <div class="third-section-item third-section-item-product-first">
+                    <div class="third-section-item-image third-section-item-first third-section-item-first-brooch"
+                         style="background-image: url('images/brooch-1.jpeg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name item-description-name-first">
+                            Брошь cо стразами
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-second">
+                    <div class="third-section-item-image third-section-item-second third-section-item-second-brooch"
+                         style="background-image: url('images/brooch-2.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name item-description-name-second">
+                            Модная женская брошь в виде цветка Стразы
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-third third-section-item-color-third">
+                    <div class="third-section-item-image third-section-item-third third-section-item-third-brooch"
+                         style="background-image: url('images/brooch-3.png')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name item-description-name-third">
+                            Брошь из белого золота с бриллиантами
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fourth third-section-item-color-fourth">
+                    <div class="third-section-item-image third-section-item-fourth"
+                         style="background-image: url('images/brooch-4.jpeg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Женская брошь перо из горного хрусталя
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fifth third-section-item-color-fifth">
+                    <div class="third-section-item-image third-section-item-fifth"
+                         style="background-image: url('images/brooch-5.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Изысканная брошь из кубического циркония
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="third-section-items" id="earrings">
+                <div class="third-section-item third-section-item-product-first third-section-item-color-first">
+                    <div class="third-section-item-image third-section-item-first third-section-item-first-earring"
+                         style="background-image: url('images/earring-1.jpeg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Золотые серьги в форме колец
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-second">
+                    <div class="third-section-item-image third-section-item-second"
+                         style="background-image: url('images/earring-2.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Женские серьги в виде крыльев
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-third third-section-item-color-third">
+                    <div class="third-section-item-image third-section-item-third third-section-item-third-earring"
+                         style="background-image: url('images/earring-3.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Серьги из золота с бриллиантами
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fourth third-section-item-color-fourth">
+                    <div class="third-section-item-image third-section-item-fourth third-section-item-fourth-earring"
+                         style="background-image: url('images/earring-4.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Золотые серьги женские
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fifth third-section-item-color-fifth">
+                    <div class="third-section-item-image third-section-item-fifth third-section-item-fifth-earring"
+                         style="background-image: url('images/earring-5.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Серьги из красного золота
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="third-section-items" id="rings">
+                <div class="third-section-item third-section-item-product-first">
+                    <div class="third-section-item-image third-section-item-first"
+                         style="background-image: url('images/1.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Женское кольцо с бриллиантами
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-second">
+                    <div class="third-section-item-image third-section-item-second"
+                         style="background-image: url('images/2.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Кольцо с украшением в форме тигра
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-third">
+                    <div class="third-section-item-image third-section-item-third"
+                         style="background-image: url('images/3.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Женское кольцо из золота в форме венца
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fourth">
+                    <div class="third-section-item-image third-section-item-fourth"
+                         style="background-image: url('images/4.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Двойное женское кольцо в форме спирали
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fifth">
+                    <div class="third-section-item-image third-section-item-fifth"
+                         style="background-image: url('images/5.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Парные кольца с украшением в виде орла
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="third-section-items" id="pendants">
+                <div class="third-section-item third-section-item-product-first">
+                    <div class="third-section-item-image third-section-item-first third-section-item-first-pendant"
+                         style="background-image: url('images/pendant-1.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name item-description-name-first-pendant">
+                            Женский кулон из белого золота
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-second">
+                    <div class="third-section-item-image third-section-item-second third-section-item-second-pendant"
+                         style="background-image: url('images/pendant-2.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name item-description-name-second-pendant">
+                            Золотой кулон-подвеска с бриллиантами
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-third third-section-item-color-third">
+                    <div class="third-section-item-image third-section-item-third third-section-item-third-pendant"
+                         style="background-image: url('images/pendant-3.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name item-description-name-third">
+                            Кулон из красного золота с бриллиантами
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fourth third-section-item-color-fourth">
+                    <div class="third-section-item-image third-section-item-fourth third-section-item-fourth-pendant"
+                         style="background-image: url('images/pendant-4.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name item-description-name-fourth">
+                            Подвеска из платины с черным и белыми бриллиантами
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fifth third-section-item-color-fifth">
+                    <div class="third-section-item-image third-section-item-fifth third-section-item-fifth-pendant"
+                         style="background-image: url('images/pendant-5.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Большой ажурный золотой кулон-подвеска
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="third-section-items" id="bracelets">
+                <div class="third-section-item third-section-item-product-first">
+                    <div class="third-section-item-image third-section-item-first"
+                         style="background-image: url('images/bracelet-1.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name item-description-name-second bracelets-order">
+                            Золотой браслет плетёный
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button bracelets-order">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-second">
+                    <div class="third-section-item-image third-section-item-second"
+                         style="background-image: url('images/bracelet-2.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Винтажный браслет в римском стиле
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-third third-section-item-color-third">
+                    <div class="third-section-item-image third-section-item-third third-section-item-third-bracelet"
+                         style="background-image: url('images/bracelet-3.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name item-description-name-third-bracelet">
+                            Браслет мужской, женский на руку каучуковый
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button">
+                            <div class="item-description-button">
+                                <button type="button" class="button button-check-price">Уточнить цену</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fourth third-section-item-color-fourth">
+                    <div class="third-section-item-image third-section-item-fourth third-section-item-fourth-bracelet"
+                         style="background-image: url('images/bracelet-4.jpeg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Цепочка "жгут" из желтого золота
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button bracelets-order">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-section-item third-section-item-product-fifth third-section-item-color-fifth">
+                    <div class="third-section-item-image third-section-item-fifth third-section-item-fifth-bracelet"
+                         style="background-image: url('images/bracelet-5.jpg')"></div>
+                    <div class="third-section-item-description">
+                        <div class="item-description-name">
+                            Женская цепочка плетения «Love»
+                        </div>
+                        <div class="item-description-to-order">
+                            На заказ
+                        </div>
+                        <div class="item-description-button bracelets-order">
+                            <button type="button" class="button button-check-price">Уточнить цену</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third-section-find" id="calc">
+        <h3 class="third-section-find-title">Не нашли то, что искали?</h3>
+        <div class="third-section-find-text">
+            Приложите фотографию, укажите Ваши пожелания и мы рассчитаем стоимость изделия.
+        </div>
+        <div class="third-section-find-action">
+            <button class="button third-section-button" id="calc-butt">Рассчитать</button>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="fourth-section wow animate__backInDown">
+    <div class="container">
+        <div class="fourth-section-border">
+            <div class="fourth-section-info">
+                <div class="fourth-section-info-discount">
+                    - 35 %
+                </div>
+                <div class="fourth-section-info-text">
+                    на все кольца
+                </div>
+                <div class="fourth-section-info-action">
+                    <a href="#third-section-container" class="button fourth-section-button">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="fifth-section wow animate__backInDown">
+    <div class="container">
+        <h2 class="fifth-section-title" id="fifth-section-container">
+            Почему выбирают нас
+        </h2>
+        <div class="fifth-section-advantages">
+            <div class="fifth-section-advantages-item fifth-section-advantages-item-first">
+                <div class="item-image">
+                    <img src="images/item-first.svg" alt="Точность размеров">
+                </div>
+                <div class="item-title">
+                    Точность размеров
+                </div>
+                <div class="item-info item-info-first">
+                    Кольца размерами от 15,5
+                </div>
+            </div>
+            <div class="fifth-section-advantages-item fifth-section-advantages-item-second">
+                <div class="item-image">
+                    <img src="images/item-second.svg" alt="Производство">
+                </div>
+                <div class="item-title">
+                    Производство
+                </div>
+                <div class="item-info">
+                    Каждое изделие изготавливается вручную
+                </div>
+            </div>
+            <div class="fifth-section-advantages-item fifth-section-advantages-item-third">
+                <div class="item-image">
+                    <img src="images/item-third.svg" alt="Сроки изготовления">
+                </div>
+                <div class="item-title">
+                    Сроки изготовления
+                </div>
+                <div class="item-info item-info-third">
+                    От 14 до 30 дней Срочное изготовление - 7 дней
+                </div>
+            </div>
+            <div class="fifth-section-advantages-item fifth-section-advantages-item-fourth">
+                <div class="item-image">
+                    <img src="images/item-fourth.svg" alt="Гарантия">
+                </div>
+                <div class="item-title">
+                    Гарантия
+                </div>
+                <div class="item-info">
+                    Мы даем пожизненную гарантию на наши изделия
+                </div>
+            </div>
+            <div class="fifth-section-advantages-item fifth-section-advantages-item-fifth">
+                <div class="item-image">
+                    <img src="images/item-fifth.svg" alt="Доставка">
+                </div>
+                <div class="item-title">
+                    Доставка
+                </div>
+                <div class="item-info">
+                    Доставим готовые изделия в любой город России и стран СНГ
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sixth-section wow animate__backInDown">
+    <div class="container">
+        <h2 class="sixth-section-title">Наша мастерская</h2>
+        <div class="sixth-section-main">
+            <div class="sixth-section-main-left">
+                <div class="sixth-section-main-left-text">
+                    Ювелирный Дом Алмаз — новая звезда на небосводе ювелирного мира. Главный приоритет компании —
+                    клиент, удовлетворенный качественным и эксклюзивным украшением. Каждое наше изделие проходит
+                    строжайший контроль качества, который обеспечивают специалисты.
+                </div>
+                <div class="sixth-section-main-left-border">
+                    <div class="sixth-section-main-image">
+                        <img src="images/six-first.png" alt="Картинка слева" class="sixth-section-image-first">
+                        <img src="images/six-second.png" alt="Картинка слева" class="sixth-section-image-second">
+                        <img src="images/image-3.png" alt="Картинка слева" class="sixth-section-image-third">
+                    </div>
+                </div>
+            </div>
+            <div class="sixth-section-main-right">
+                <div class="sixth-section-main-right-border">
+                    <div class="sixth-section-main-image">
+                        <img src="images/six-second.png" alt="Картинка справа" class="sixth-section-image-first">
+                        <img src="images/six-first.png" alt="Картинка справа" class="sixth-section-image-second">
+                        <img src="images/image-4.png" alt="Картинка справа" class="sixth-section-image-third">
+                    </div>
+                </div>
+                <div class="sixth-section-main-right-text">
+                    Клиенты, обратившиеся к нам, сами участвуют в процессе по созданию и воплощению своей ювелирной
+                    мечты, будь то легкое колечко с необычным рисунком или большая подвеска с уникальным бриллиантом.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="seventh-section wow animate__backInDown">
+    <div class="container">
+        <h2 class="seventh-section-title">
+            Отзывы о нас
+        </h2>
+        <div class="seventh-section-carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item-info">
+                            <img class="d-block w-100" src="images/slide-1.png" alt="First slide">
+                            <div class="item-customer">Марина, г. Москва</div>
+                            <div class="carousel-item-background">
+                                <img src="images/square-7.png" alt="Background image">
+                            </div>
+                        </div>
+                        <div class="item-text">
+                            Делала на заказ украшение в золоте. Выполнено на высшем уровне! Кольцо и серьги
+                            необыкновенной красоты. Ювелирный Дом Алмаз- профессионал своего дела! Всем своим друзьям и
+                            знакомым рекомендую!
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-info">
+                            <img class="d-block w-100" src="images/slide-2.png" alt="Second slide">
+                            <div class="item-customer">Тамара, г. Королев</div>
+                            <div class="carousel-item-background">
+                                <img src="images/square-7.png" alt="Background image">
+                            </div>
+                        </div>
+                        <div class="item-text">
+                            Всегда заказываю у Вас ювелирные изделия. Очень приятно с Вами работать. Никогда не бывает
+                            недостатка в выборе. Все качественное. Интересные и стильные украшения из серебра, дочка
+                            Ваша фанатка. Цены очень радуют.
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-info">
+                            <img class="d-block w-100" src="images/slide-3.jpg" alt="Third slide">
+                            <div class="item-customer">Таисия, г. Люберцы</div>
+                            <div class="carousel-item-background">
+                                <img src="images/square-7.png" alt="Background image">
+                            </div>
+                        </div>
+                        <div class="item-text">
+                            Заказали брошь, все очень оперативно, два дня и брошь была у нас.
+                            Исполнение брошки отличное и не дорого, девочка, которой подарили,
+                            была в восторге. Спасибо!
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-info">
+                            <img class="d-block w-100" src="images/slide-4.jpg" alt="Fourth slide">
+                            <div class="item-customer">Милана, г. Подольск</div>
+                            <div class="carousel-item-background">
+                                <img src="images/square-7.png" alt="Background image">
+                            </div>
+                        </div>
+                        <div class="item-text">
+                            Хороший ювелирный магазин. Аккуратно оформлены витрины с огромным выбором украшений. Сделали
+                            приятную скидку ,чему был очень рад. Понравился дизайн украшений, можно найти товары,
+                            которых нет в других местах.
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-info">
+                            <img class="d-block w-100" src="images/slide-5.jpg" alt="Fifth slide">
+                            <div class="item-customer">Ульяна, г. Балашиха</div>
+                            <div class="carousel-item-background">
+                                <img src="images/square-7.png" alt="Background image">
+                            </div>
+                        </div>
+                        <div class="item-text">
+                            Покупала несколько раз ювелирные украшения. В связи с переездом,
+                            теперь пользуюсь интернет-магазином. Не оттягивают доставку и всегда привозят вовремя.
+                            Довольна качеством и сервисом. Главное большой выбор украшений, на любой вкус.
+                        </div>
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-info">
+            <div class="logo">
+                <img src="images/Logotip.png" alt="Логотип">
+            </div>
+            <div class="footer-info-number">
+                +7 (900) 14-14-333
+                info@almaz.ru
+            </div>
+            <div class="footer-info-address">
+                г. Москва
+                Миллионная ул.5
+            </div>
+        </div>
+        <div class="footer-opening-hours">
+            <div class="footer-opening-hours-title">
+                Часы работы
+            </div>
+            <div class="footer-opening-hours-work">
+                <div>
+                    Ежедневно
+                </div>
+                <div>
+                    с 9:00 - до 21:00
+                </div>
+            </div>
+            <div class="footer-opening-hours-description">
+                Согласуйте свой визит
+                <div>
+                    перед посещением мастерской
+                </div>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <div class="footer-socials-title">
+                Соцсети
+            </div>
+            <div class="footer-socials-links">
+                <a href="#Instagram" class="footer-socials-link">
+                    <div class="footer-socials-link-text">Инстаграм</div>
+                    <div class="footer-socials-link-icon"><img src="images/facebook.svg" alt=""></div>
+                </a>
+                <a href="#Facebook" class="footer-socials-link">
+                    <div class="footer-socials-link-text">Фейсбук</div>
+                    <div class="footer-socials-link-icon"><img src="images/instagram.svg" alt=""></div>
+                </a>
+                <a href="#Vkontakte" class="footer-socials-link">
+                    <div class="footer-socials-link-text">Вконтакте</div>
+                    <div class="footer-socials-link-icon"><img src="images/vk.svg" alt=""></div>
+                </a>
+                <a href="#telegram" class="footer-socials-link">
+                    <div class="footer-socials-link-text">Телеграм-канал</div>
+                    <div class="footer-socials-link-icon"><img src="images/telegram.svg" alt=""></div>
+                </a>
+            </div>
+        </div>
+        <div class="footer-email-subscription">
+            <div class="footer-email-subscription-title">
+                Подписка на рассылку
+            </div>
+            <div class="footer-email-subscription-text">
+                Сообщим о новинках и скидках
+            </div>
+            <div class="footer-email-subscription-action">
+                <div class="footer-email-subscription-action-email">
+                    <input type="email" placeholder="E-mail" class="form-input footer-input" id="footer-input">
+                </div>
+                <div class="footer-email-subscription-action-button">
+                    <button class="form-button footer-button" id="footer-button">Подписаться</button>
+                </div>
+            </div>
+            <div class="footer-email-subscription-success">
+                Успешно!
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="scripts/jquery-3.2.1.slim.min.js"></script>
+<script src="scripts/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
